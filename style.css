@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+#title {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  font-size: 55px;
+  color: #ffffff;
+}
+
+figcaption {
+  color: #ffffff;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #17150c, #130c17);
+}
+
+article {
+  color: #ffffff;
+}
+
+
+
+main {
+  font-family: Montserrat, serif;
+  text-align: center;
+  font-size: 18px;
+  
+  padding: 15px 15px 15px 15px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+#tribute-info {
+  display: grid;
+  /* grid-template-columns: repeat(2, auto); */
+  grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-areas:
+    "celebration celebration"
+    "chronology-title pictures-title"
+    "chronology pictures"
+    "wikipedia wikipedia";
+}
+
+@media (max-width: 800px) {
+  #title {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    font-size: 12vw;
+  }
+
+  #main {
+    font-family: Montserrat, serif;
+    font-size: 5vw;
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  h3 {
+    font-size: 6vw;
+  }
+
+  #tribute-info {
+    display: grid;
+    gird grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-areas:
+      "celebration"
+      "chronology-title"
+      "chronology"
+      "pictures-title"
+      "pictures"
+      "wikipedia";
+  }
+}
+
+#celebration {
+  grid-area: celebration;
+}
+
+#chronology-title {
+  grid-area: chronology-title;
+}
+
+#pictures-title {
+  grid-area: pictures-title;
+}
+
+#chronology {
+  grid-area: chronology;
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+#photogallery {
+  grid-area: pictures;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+ul {
+  list-style: square;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 14px;
+}
+
+strong {
+  font-weight: 900;
+}
+
+a {
+  color: #0037ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff7300;
+}
+
+/* User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size. */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#brancaimg {
+  animation-name: brancamain;
+  animation-duration: 4s;
+}
+
+@keyframes brancamain {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#wikilink {
+  grid-area: wikipedia;
+}

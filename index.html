@@ -1,0 +1,98 @@
+<!-- Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNqgVx. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>A tribute to Vittore Branca</title>
+</head>
+
+<body>
+  <!-- User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").-->
+  <header>
+    <h1 id="title">Vittore Branca (1913&HorizontalLine;2004)</h1>
+  </header>
+
+  <!-- User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements. -->
+  <main id="main">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <!-- User Story #3: I should see a div element with a corresponding id="img-div". -->
+    <div id="img-div">
+      <!-- User Story #4: Within the img-div element, I should see an img element with a corresponding id="image".-->
+      <figure id="brancaimg">
+        <!-- User Story #9: The img element should be centered within its parent element.-->
+        <img id="image"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Vittore_Branca.jpg/585px-Vittore_Branca.jpg"
+          alt="Vittore Branca" width="350">
+        <!--User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div.-->
+        <figcaption id="img-caption">Vittore Branca at a conference <br> (image from Wikipedia)</figcaption>
+      </figure>
+    </div>
+    <!-- User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing
+    the subject of the tribute page. -->
+    <article id="tribute-info">
+      <h2 id="celebration">This page celebrates the life and works of renowned Italian philologist Vittore Branca.</h2>
+      <section>
+        <h3 id="chronology-title">A chronology of Branca's life.</h3>
+        <div id="chronology">
+          <ul>
+            <li><strong>1913</strong>: Vittore Branca is born in Savona, Italy and is raised nearby Como Lake.</li>
+            <li><strong>1931</strong>: He is admitted at the prestigious <em>Scuola Normale Superiore</em> in Pisa. He
+              meets
+              Giovanni Gentile, his future supervisor and mentor.</li>
+            <li><strong>1935</strong>: Branca graduates from the <em>Scuola Normale Superiore</em> with the highest
+              mark.
+            </li>
+            <li><strong>1937</strong>: Branca works at the Accademia della Crusca in Florence to the national edition of
+              Giovanni Boccaccio's works. He starts to teach in local high schools.
+            </li>
+            <li><strong>1943</strong>: Branca works with other Catholic intellectuals to the <em>Codice di
+                Camalodoli</em>,
+              a document that would shape the establishment of the Christian Democratic political party after the war.
+              Branca also collaborates with the Italian Resistance against Nazism and Fascism.
+            </li>
+            <li><strong>1944</strong>: Giovanni Gentile contacts Branca to collaborate with him, but Branca refuses.
+              Branca
+              takes part in the events that will bring to the liberation of Florence, being the only survivor of the
+              Resistance's leadership.</li>
+            <li><strong>1944-1949</strong>: He teaches at the Universities of Florence and Rome.</li>
+            <li><strong>1952-1953</strong>: He is Visiting Professor at the Sorbonne University in Paris</li>
+            <li><strong>1953</strong>: He starts his career at the University of Padua, where he will remain for the
+              rest
+              of
+              his life</li>
+            <li><strong>2004</strong>: Branca dies in Venice at 91 years old.</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h3 id="pictures-title">Branca's life in pictures</h3>
+        <div id="photogallery">
+          <figure><img id="pic1" src="https://upload.wikimedia.org/wikipedia/it/e/e6/Branca_Pound.jpg"
+              alt="Branca with Ezra Pound">
+            <figcaption>Branca with Ezra Pound</figcaption>
+          </figure>
+          <figure><img id="pic2" src="https://upload.wikimedia.org/wikipedia/it/a/a8/Branca_%2779.jpg"
+              alt="Branca with Pietro Ingrao">
+            <figcaption>Branca with Pietro Ingrao</figcaption>
+          </figure>
+          <figure><img id="pic3" src="https://upload.wikimedia.org/wikipedia/it/2/20/Branca_%2759.jpg"
+              alt="Branca on board of the vessel &quot;Giorgio Cini&quot;">
+            <figcaption>Branca on board of the vessel &quot;Giorgio Cini&quot;</figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that
+    contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of
+    target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank"). -->
+      <p id="wikilink">For more informations on the life of Vittore Branca, <a id="tribute-link"
+          href="https://it.wikipedia.org/wiki/Vittore_Branca" target="_blank">visit this Wikipedia article (in
+          Italian).</a></p>
+    </article>
+  </main>
+</body>
+
+</html>
